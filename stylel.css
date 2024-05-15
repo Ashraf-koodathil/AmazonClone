@@ -97,6 +97,8 @@ nav a div{
 
 .nav-text p {
     font-size: 12px;
+    
+
 }
 
 .nav-text h1{
@@ -127,6 +129,11 @@ nav a div{
     font-weight: 500;
 }
 
+
+.nav-bottom p {
+    cursor: pointer;
+}
+
 .header-slider ul{
     display: flex;
     overflow-y: hidden;
@@ -134,14 +141,54 @@ nav a div{
 
 .header-img {
     max-width: 100%;
+    mask-image: linear-gradient(to bottom, #000000 50%,transparent 100%);
 }
 
-.fa-solid  {
+.arrow  {
     position: absolute;
-    top: 400px;
+    top: 26%;
+    padding: 50px 18px;
+    cursor: pointer;
     z-index: 1;
-    font-size: 50px;
-    
 }
 
+#takeImg{ 
+    transform: rotate(180deg);
+}
 
+.right{
+    right: 20px;
+}
+
+.fa-2xs {
+    left: 20px;
+}
+
+.box-row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.box-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+    background-color: #fff;
+    max-width: 24%;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.box-col a {
+    font-size: 13px;
+    color: #009999;
+    font-weight: 500;
+}
+
+.header-box {
+    margin-top: -20vw;
+}
