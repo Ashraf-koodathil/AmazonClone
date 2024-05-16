@@ -36,5 +36,13 @@ controlRight.addEventListener('click',() => {
 
 })
 
+const scrollContainer = document.querySelectorAll('.product')
+console.log(scrollContainer);
 
+for(item of scrollContainer) {
+    item.addEventListener('wheel', (e) => {
+        e.preventDefaul()
+        item.scrollLeft += e.deltaY;
+    })
+}
 
